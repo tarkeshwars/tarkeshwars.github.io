@@ -1,4 +1,3 @@
-<script type="text/javascript">
 $(document).ready(function() {
  $('#myform').validate({
   rules: {
@@ -35,5 +34,4 @@ submitHandler: function(form) {
 	$("#submit").css("background-image","url(../images/ic_tick.png)");
   }
  });
-}); // end validate form
-</script>
+});
