@@ -27,7 +27,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   analytics.load("f0uAQHg0eZrJtI3YjSUwP2d10qmzmBCh");
   analytics.page();
   }}();
-</script>	
+</script>
+<script>
+analytics.identify({
+  nickname: 'Amazing Grace',
+  favoriteCompiler: 'A-0',
+  industry: 'Computer Science'
+}, 
+{}, 
+{
+  context: {
+    device:{
+	advertisingId: '1234'
+    }
+  }
+}, 
+{});
+</script>
 <!-- Google Analytics-->
 
 <script>
