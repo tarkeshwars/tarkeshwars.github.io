@@ -117,20 +117,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                   console.log("test");
 		analytics.track('SegmentTest', {
   			title: 'How to Create a Tracking Plan',
-			course: 'Intro to Analytics',
-			context: {
-				device:{
-					advertisingId: '1234'
-				}
-			}},
+			course: 'Intro to Analytics'},
 			{
 				context: {
 				device:{
 					advertisingId: '1234'
 				}
 			}
-			}
-		    );
+			});
                   });
                 </script>
                 </div>    
