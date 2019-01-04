@@ -111,6 +111,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                   
                   //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
                   $(".trigger").click(function(){
+	            analytics.track('SegmentTest', {
+  			title: 'How to Create a Tracking Plan',
+			course: 'Intro to Analytics',
+			context: {
+				device:{
+					advertisingId: '1234'
+				}
+			},
+     			campaign: campaign
+		    }, , [callback]);
                     $(this).toggleClass("active").next().slideToggle("slow");
                     return false; //Prevent the browser jump to the link anchor
                   });
