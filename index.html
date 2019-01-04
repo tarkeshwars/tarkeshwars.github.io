@@ -111,8 +111,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                   
                   //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
                   $(".trigger").click(function(){
-		    console.log("test");
-	            analytics.track('SegmentTest', {
+                    $(this).toggleClass("active").next().slideToggle("slow");
+                    return false; //Prevent the browser jump to the link anchor
+                  });
+                  console.log("test");
+	           analytics.track('SegmentTest', {
   			title: 'How to Create a Tracking Plan',
 			course: 'Intro to Analytics',
 			context: {
@@ -122,10 +125,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			},
      			campaign: campaign
 		    });
-                    $(this).toggleClass("active").next().slideToggle("slow");
-                    return false; //Prevent the browser jump to the link anchor
-                  });
-                  
                   });
                 </script>
                 </div>    
