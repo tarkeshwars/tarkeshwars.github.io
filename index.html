@@ -141,21 +141,21 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                     return false; //Prevent the browser jump to the link anchor
                   });
                   console.log("test");
-		analytics.track('SegmentTest', {
-  			title: 'How to Create a Tracking Plan',
-			course: 'Intro to Analytics'},
-			{
-				context: {
-				device:{
-					advertisingId: '1234'
-				}
-			},
-			{
-				integrations: {
-				    'Facebook App Events': true
-				  }
-			});
-                  });
+    analytics.track('SegmentTest', {
+        title: 'How to Create a Tracking Plan',
+      course: 'Intro to Analytics'},
+      {
+        context: {
+        device:{
+          advertisingId: '1234'
+        }
+      },
+      {
+        integrations: {
+            'Facebook App Events': true
+        }
+      }
+    })
                 </script>
                 </div>    
            <div class="clear"></div>
