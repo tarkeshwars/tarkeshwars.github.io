@@ -37,7 +37,7 @@ analytics.identify('222172', {
 {
   context: {
     device:{
-	advertisingId: '1234'
+  advertisingId: '1234'
     }
   }
 });
@@ -54,6 +54,26 @@ analytics.page('Pricing','Pricing 1', {
     device:{advertisingId: '1234'}}}
 );
 </script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '561446250996451');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id=561446250996451&ev=PageView&noscript=1"/>
+</noscript>
+fbq('init', <YOUR_PIXEL_ID>);
+fbq('set', 'mobileBridge', 561446250996451, 1863524040543080);
+<!-- End Facebook Pixe l Code -->
 <!-- Google Analytics-->
 
 <script>
@@ -79,13 +99,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 <!-- Javascript to animate scroll! -->
 <script type="text/javascript">
-				jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		}); //end animate scroll
-		</script>	
+        jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){   
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+      });
+    }); //end animate scroll
+    </script> 
 </head>
 <body>
 <!-- Header Section starts here! -->
@@ -151,11 +171,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                       }
                     },
                       integrations: {
-			  'All': false,
+        'All': false,
                           'Facebook App Events': true,
-			  'Amplitude': true,
-			  'Webhooks':true,
-			  'Facebook Pixel': true
+        'Amplitude': true,
+        'Webhooks':true,
+        'Facebook Pixel': true
                       }
                   })
                   })
